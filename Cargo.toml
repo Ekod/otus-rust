@@ -1,0 +1,3 @@
+[workspace]
+members = ["hw_1"]
+exclude = ["hw_1/.idea"]
