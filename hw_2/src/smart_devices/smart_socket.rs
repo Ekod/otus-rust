@@ -5,7 +5,7 @@ pub enum PowerMode {
 
 pub struct SmartSocket {
     name: String,
-    is_enabled: PowerMode,
+    state: PowerMode,
     power_consumption: u16,
 }
 
@@ -13,7 +13,7 @@ impl SmartSocket {
     pub fn new(name: String) -> Self {
         Self {
             name,
-            is_enabled: PowerMode::Off,
+            state: PowerMode::Off,
             power_consumption: 220,
         }
     }
@@ -23,7 +23,7 @@ impl SmartSocket {
     }
 
     pub fn switch(&mut self, mode: PowerMode) {
-        self.is_enabled = mode;
+        self.state = mode;
     }
 
     pub fn print_current_power_consumption(&self) {
