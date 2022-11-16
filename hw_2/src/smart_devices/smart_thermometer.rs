@@ -9,7 +9,7 @@ impl SmartThermometer {
         }
     }
 
-    pub  fn get_current_temperature(&self) {
+    pub  fn print_current_temperature(&self) {
         let celsius_unicode = "\u{2103}";
         println!("The current temperature is {}{celsius_unicode}", self.current_temperature)
     }

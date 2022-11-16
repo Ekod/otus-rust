@@ -18,7 +18,7 @@ impl SmartSocket {
         }
     }
 
-    pub fn description(&self) {
+    pub fn print_socket_name(&self) {
         println!("The name of the socket is {}", self.name)
     }
 
@@ -26,7 +26,7 @@ impl SmartSocket {
         self.is_enabled = mode;
     }
 
-    pub fn get_current_power_consumption(&self) {
+    pub fn print_current_power_consumption(&self) {
         println!("The current power consumption is {} watt", self.power_consumption)
     }
 }
